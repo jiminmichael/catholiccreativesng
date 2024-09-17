@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Contact Us</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+ 
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/about.css">
+  <link rel="stylesheet" href="static/css/register.css">
+
+ 
+
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Catholic Creatives <sup> Ng</sup></h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" >Home<br></a></li>
+          <li><a href="/about" class="active">About Us</a></li>
+          <li><a href="services.html">Gallery</a></li>
+          <li><a href="/register">Join Us</a></li>
+          {% comment %} <li><a href="team.html">Team</a></li> {% endcomment %}
+          <li><a href="blog.html">Merch</a></li> 
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="blog.html">Support Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade">
+      <div class="container">
+        <h1>Join Us</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Join Us</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <div class="container position-relative container-register" data-aos="fade-up" data-aos-delay="100">     
+          <form id="multiSectionForm"method="post" class="php-email-form" enctype="multipart/form-data">
+              {% csrf_token %}
+              <section id="section0" class="section">
+                <div class="container section-title" data-aos="fade-up">
+                  <h2>Catholic Creatives Hub Nigeria Community Membership Questionnaire</h2>
+                  
+                  {% comment %} <p>Here are the pioneer members of catholic creatives Nigeria</p> {% endcomment %}
+                </div>
+                <p>Catholic Creatives Nigeria, is a platform birthed out of the need to build a community of Catholic Creatives, who will be devoted to using their God-given gifts and talents to create contents that will enthrone and uphold catholic values,  leveraging on the creative and entertainment industry to push Catholic contents.
+                  The hallmark of this platform is community; bringing catholic creatives together and building a support system for them by creating the much-needed opportunities for collaboration among themselves, providing mentorship from established creatives, achieving independence, and earning a living from their creative works.
+                   
+                  Our goal is to profile young creative, gifted, and talented Catholics, mentor and equip them to actualize and utilize their God-given gifts and potentials, achieve independence, and become resourceful, thereby, impacting positively on their local community and the larger society.</p>
+              </section>
+              <!-- Section 1 -->
+              <section id="section1" class="section">
+                <div class="container section-title" data-aos="fade-up">
+                  <h2>Personal Information</h2>
+                  {% comment %} <p>Here are the pioneer members of catholic creatives Nigeria</p> {% endcomment %}
+                </div>
+                    <div class="form-field">
+                      <p>
+                        <label for="id_first_name">First name:</label>
+                        <input type="text" name="first_name" class="form-control" maxlength="50" required aria-invalid="true" id="id_first_name" placeholder="Your first name">
+                    
+                    
+                      </p>
+                      
+                    </div>
+                    <div class="form-field">
+          
+                      <p>
+                        <label for="id_last_name">Last name:</label>
+                        <input type="text" name="last_name" class="form-control" maxlength="50" required aria-invalid="true" id="id_last_name" placeholder="Your last name">  
+                    
+                    
+                      </p>
+                     
+                    </div>
+                    <div class="form-field">
+                
+                      <p>
+                        <label for="id_email">Email:</label>
+                        <input type="email" name="email" placeholder="example@email.com" class="form-control" maxlength="50" required id="id_email">
+                    
+                    
+                      </p>
+                    </div>
+                    <div class="form-field">
+                      <p>
+                        <label for="id_address">Address:</label>
+                        <input type="text" name="address" class="form-control" maxlength="200" required aria-invalid="true" id="id_address" placeholder="E.g Houston,Texas U.S.A">
+      
+      
+                      </p>
+                    </div>
+                    <div class="form-field">
+                      <p>
+                        <label for="id_phone_number">Phone number:</label>
+                        <input type="text" name="phone_number" class="form-control" maxlength="20" required aria-invalid="true" id="id_phone_number">
+      
+      
+                      </p>
+                    </div>
+                    <div class="form-field">
+                  
+                      <p>
+                        <label for="id_social_media_handles">Social media handles:</label>
+                        <input type="text" name="social_media_handles" class="form-control" maxlength="200" required aria-invalid="true" id="id_social_media_handles">
+                    
+                    
+                      </p>
+                    </div>
+                    <div class="form-field">
+                      <p>
+                        <label for="id_profile_picture">Profile picture:</label>
+                        <input type="file" name="profile_picture" class="form-control" accept="image/*" required aria-invalid="true" id="id_profile_picture">       
+                      </p>
+      
+                    </div>
+                  
+                  {% comment %} {{ form.as_p }} {% endcomment %}
+                  
+              </section>
+      
+              <!-- Section 2 -->
+              <section id="section2" class="section" style="display: none;">
+                <div class="container section-title" data-aos="fade-up">
+                  <h2>Faith And Spirituality Section</h2>
+                  {% comment %} <p>Here are the pioneer members of catholic creatives Nigeria</p> {% endcomment %}
+                </div>
+                <div class="form-field">
+                  <p>
+                    <label for="id_are_you_a_catholic">Are you a catholic:</label>
+                    <select name="are_you_a_catholic" id="id_are_you_a_catholic" class="form-control">
+                      <option>Choose one option</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                      <option value="na">i rather not say</option>
+                    </select>
+                  </p>
+                </div>
+                <div class="form-field">
+                  <p>
+                    <label for="id_catholic_engagement">Catholic engagement:</label>
+                    <select name="catholic_engagement" class="form-control" id="id_catholic_engagement">
+                        <option value="Attending Mass" selected>Attending Mass</option>
+                
+                        <option value="participating in parish activities">participating in parish activities</option>
+                
+                        <option value="personal prayer life">personal prayer life</option>
+                
+                        <option value="membership of a pious society or organisation">membership of a pious society or organisation</option>
+                
+                    </select>
+                
+                
+                  </p>
+                </div>
+                <div class="form-field">
+                  <p>
+                    <label for="id_parish">Parish:</label>
+                    <input type="text" name="parish" class="form-control" maxlength="100" required aria-invalid="true" id="id_parish">
+                
+                
+                  </p>
+                </div>
+                <div class="form-field">
+                  <p>
+                    <label for="id_can_you_tell_us_about_spiritual_journey">Can you tell us about spiritual journey:</label>
+                    <textarea name="can_you_tell_us_about_spiritual_journey" cols="40" rows="1" class="form-control" maxlength="400" required aria-invalid="true" id="id_can_you_tell_us_about_spiritual_journey">
+                    </textarea>
+              
+                  </p>
+                </div>
+                <div class="form-field">
+                  <p>
+                    <label for="id_What_has_led_you_to_consider_joining_or_Remaining_in_the_Catholic_Church">What has led you to consider joining or Remaining in the Catholic Church:</label>
+                    <textarea name="What_has_led_you_to_consider_joining_or_Remaining_in_the_Catholic_Church" cols="40" rows="1" class="form-control" maxlength="500" required aria-invalid="true" id="id_What_has_led_you_to_consider_joining_or_Remaining_in_the_Catholic_Church">
+                    </textarea>
+                
+                
+                  </p>
+                </div>
+                <div class="form-field">
+                  <p>
+                    <label for="id_What_aspects_of_Catholicism_attract_you_the_most">What aspects of Catholicism attract you the most:</label>
+                    <textarea name="What_aspects_of_Catholicism_attract_you_the_most" cols="10" rows="1" class="form-control" maxlength="500" required aria-invalid="true" id="id_What_aspects_of_Catholicism_attract_you_the_most">
+                    </textarea>
+                  </p>
+                </div>
+      
+              </section>
+      
+              <!-- Section 3 -->
+              <section id="section3" class="section" style="display: none;">
+                  
+                  <div class="container section-title" data-aos="fade-up">
+                     <h2>Creative Background</h2>
+                    {% comment %} <p>Here are the pioneer members of catholic creatives Nigeria</p> {% endcomment %}
+                  </div>
+                  <div class"form-field">
+                    <p>
+                      <label for="id_What_type_of_creative_work_do_you_do">What type of creative work do you do:</label>
+                      <input type="text" name="What_type_of_creative_work_do_you_do" class="form-control" maxlength="50" required aria-invalid="true" id="id_What_type_of_creative_work_do_you_do" placeholder="Your profession">
+                    </p>
+                  </div>
+                  <div class"form-field">
+                    <p>
+                      <label for="id_What_inspires_your_creative_work_and_how_does_your_faith_influence_it">What inspires your creative work and how does your faith influence it:</label>
+                      <textarea name="What_inspires_your_creative_work_and_how_does_your_faith_influence_it" cols="40" rows="1" class="form-control" maxlength="400" required aria-invalid="true" id="id_What_inspires_your_creative_work_and_how_does_your_faith_influence_it">
+                      </textarea>
+                  
+                  
+                    </p>
+                    
+                  </div>
+                  <div class="form-field">
+                    <p>
+                      <label for="id_Please_provide_links_to_your_portfolio_or_examples_of_your_work">Please provide links to your portfolio or examples of your work:</label>
+                      <textarea name="Please_provide_links_to_your_portfolio_or_examples_of_your_work" cols="40" rows="1" class="form-control" maxlength="400" id="id_Please_provide_links_to_your_portfolio_or_examples_of_your_work">
+                      </textarea>
+                  
+                  
+                    </p>
+                  </div>
+                  <div class="form-field">
+                    <p>
+                      <label for="id_Do_you_agree_to_uphold_the_teachings_and_values_of_the_Catholic_Church_in_your_creative_work">Do you agree to uphold the teachings and values of the Catholic Church in your creative work:</label>
+                      <select name="Do_you_agree_to_uphold_the_teachings_and_values_of_the_Catholic_Church_in_your_creative_work" class="form-control" id="id_Do_you_agree_to_uphold_the_teachings_and_values_of_the_Catholic_Church_in_your_creative_work">
+                      <option value="yes" selected>Yes</option>
+                  
+                      <option value="no">No</option>
+                  
+                      <option value="na">i rather not say</option>
+                  
+                      </select>
+                  
+                  
+                    </p>
+                  </div>
+              </section>
+              <section id="section4" class="section" style="display: none;">
+                <div class="container section-title" data-aos="fade-up">
+                  <h2>Community Engagement Section</h2>
+                  {% comment %} <p>Here are the pioneer members of catholic creatives Nigeria</p> {% endcomment %}
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_Why_do_you_want_to_join_Catholic_Creatives_Nigeria_Community">Why do you want to join Catholic Creatives Nigeria Community:</label>
+                    <textarea name="Why_do_you_want_to_join_Catholic_Creatives_Nigeria_Community" cols="40" rows="1" class="form-control" maxlength="400" required aria-invalid="true" id="id_Why_do_you_want_to_join_Catholic_Creatives_Nigeria_Community">
+                    </textarea>
+                
+                
+                  </p>
+            
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_Have_you_been_part_of_any_creative_communities_before">Have you been part of any creative communities before:</label>        
+                    <select name="Have_you_been_part_of_any_creative_communities_before" class="form-control" id="id_Have_you_been_part_of_any_creative_communities_before">
+                        <option value="yes" selected>Yes</option>
+                
+                        <option value="no">No</option>
+                
+                        <option value="na">i rather not say</option>
+                
+                    </select>
+                
+                
+                  </p>
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_If_yes_please_describe_your_experience">If yes please describe your experience:</label>
+                    <textarea name="If_yes_please_describe_your_experience" cols="40" rows="1" class="form-control" maxlength="400" required aria-invalid="true" id="id_If_yes_please_describe_your_experience">
+                    </textarea>
+                
+                
+                  </p>
+            
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_How_do_you_envision_contributing_to_this_Catholic_creative_community">How do you envision contributing to this Catholic creative community:</label>
+                    <textarea name="How_do_you_envision_contributing_to_this_Catholic_creative_community" cols="40" rows="1" class="form-control" maxlength="400" required aria-invalid="true" id="id_How_do_you_envision_contributing_to_this_Catholic_creative_community">
+                    </textarea>
+                
+                
+                  </p>
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_What_do_you_hope_to_gain_from_being_part_of_this_community">What do you hope to gain from being part of this community:</label>
+                    <textarea name="What_do_you_hope_to_gain_from_being_part_of_this_community" cols="40" rows="1" class="form-control" maxlength="400" required aria-invalid="true" id="id_What_do_you_hope_to_gain_from_being_part_of_this_community">
+                    </textarea>
+                
+                
+                  </p>
+            
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_Are_you_willing_to_participate_in_regular_meetings_events_or_online_discussions">Are you willing to participate in regular meetings events or online discussions:</label>
+                    <select name="Are_you_willing_to_participate_in_regular_meetings_events_or_online_discussions" class="form-control" id="id_Are_you_willing_to_participate_in_regular_meetings_events_or_online_discussions">
+                    <option value="yes" selected>Yes</option>
+                
+                    <option value="no">No</option>
+                
+                    <option value="na">i rather not say</option>
+                
+                    </select>
+                
+                
+                  </p>
+                </div>
+                <div class"form-field">
+                  
+                </div>
+                
+              </section>
+              <section id="section5" class="section" style="display: none;">
+                <div class="container section-title" data-aos="fade-up">
+                  <h2>Values And Alignment Section</h2>
+                  {% comment %} <p>Here are the pioneer members of catholic creatives Nigeria</p> {% endcomment %}
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_Do_you_agree_to_uphold_the_teachings_and_values_of_the_Catholic_Church_in_your_creative_work">Do you agree to uphold the teachings and values of the Catholic Church in your creative work:</label>
+                    <select name="Do_you_agree_to_uphold_the_teachings_and_values_of_the_Catholic_Church_in_your_creative_work" class="form-control" id="id_Do_you_agree_to_uphold_the_teachings_and_values_of_the_Catholic_Church_in_your_creative_work">
+                    <option value="yes" selected>Yes</option>
+                
+                    <option value="no">No</option>
+                
+                    <option value="na">i rather not say</option>
+                
+                    </select>
+                
+                
+                  </p>
+            
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_How_do_you_handle_creative_challenges_or_disagreements_in_group_setting">How do you handle creative challenges or disagreements in group setting:</label>
+                    <textarea name="How_do_you_handle_creative_challenges_or_disagreements_in_group_setting" cols="40" rows="1" class="form-control" maxlength="400" required aria-invalid="true" id="id_How_do_you_handle_creative_challenges_or_disagreements_in_group_setting">
+                    </textarea>
+                
+                
+                  </p>
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_How_important_is_collaboration_and_mutual_support_to_you_in_a_creative_community">How important is collaboration and mutual support to you in a creative community:</label>
+                    <textarea name="How_important_is_collaboration_and_mutual_support_to_you_in_a_creative_community" cols="40" rows="1" class="form-control" maxlength="400" required aria-invalid="true" id="id_How_important_is_collaboration_and_mutual_support_to_you_in_a_creative_community">
+                    </textarea>
+                
+                
+                  </p>
+            
+                </div>
+              </section>
+              <section id="section6" class="section" style="display: none;">
+                
+                <div class="container section-title" data-aos="fade-up">
+                  <h2>Additional Information Section</h2>
+                  {% comment %} <p>Here are the pioneer members of catholic creatives Nigeria</p> {% endcomment %}
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_Is_there_anything_else_you_would_like_us_to_know_about_you_or_your_creative_journey">Is there anything else you would like us to know about you or your creative journey:</label>
+                    <input type="text" class="form-control"name="Is_there_anything_else_you_would_like_us_to_know_about_you_or_your_creative_journey" maxlength="400" required aria-invalid="true" id="id_Is_there_anything_else_you_would_like_us_to_know_about_you_or_your_creative_journey">
+                
+                
+                  </p>
+                </div>
+                <div class"form-field">
+                  <p>
+                    <label for="id_Do_you_have_any_specific_expectations_or_suggestions_for_this_community">Do you have any specific expectations or suggestions for this community:</label>
+                    <input type="text" class="form-control" name="Do_you_have_any_specific_expectations_or_suggestions_for_this_community" maxlength="400" required aria-invalid="true" id="id_Do_you_have_any_specific_expectations_or_suggestions_for_this_community">
+                  </p>
+                </div>
+              </section>
+      
+            <div class="form-footer">
+              <!-- Buttons -->
+              <button id="prevBtn" class="btn btn-outline-success" disabled>Previous</button>
+              <button id="nextBtn" class="btn btn-success">Next Section</button>
+              <button id="submitBtn" disabled type='submit'>Submit</button>
+            </div>                
+          </div>
+            
+
+              
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container copyright text-center">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Catholic Creatives <sup>Ng</sup></strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        
+        Designed by <a href="https://bootstrapmade.com/">Tomesu Technologies LTD</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  <!-- Vendor JS Files -->
+  
+    
+    
+  <script src="static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <!-- Main JS File -->
+    
+    <script src="static/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+
+  <!-- Main JS File -->
+  
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+.dark-background{
+    background-image: url(static/images/Hangout/CreativeHangout1.jpg);
+}
+
+.about-text{
+    width: 60%;
+    position: relative;
+}
+.section-title{
+    color: green;
+}

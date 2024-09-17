@@ -1,0 +1,37 @@
+
+input , textarea{
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+    border-bottom: 1px solid green;
+}
+.section-title{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.form-control{
+    border-top: none;
+    border-left: none;
+    border-right:none ;
+    border-bottom: 1px solid green;
+}
+/* section{
+    text-align: center;
+    position: relative;
+} */
+
+#nextBtn , #submitBtn{
+    right: 5%;
+    position: absolute;
+}
+.container-register{
+    width: 60%;
+    position: relative;
+}
+
+@media (max-width:768px) {
+    .container-register{
+        width: 100%;
+    }
+
+}
